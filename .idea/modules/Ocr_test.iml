@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="Ocr:test" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" external.system.module.group="" external.system.module.type="sourceSet" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output-test url="file://$MODULE_DIR$/../../out/test/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../src/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/test/resources" type="java-test-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Ocr_main" />
+    <orderEntry type="library" name="Gradle: :antlr4-runtime-4.0.1z:" level="project" />
+    <orderEntry type="library" name="Gradle: :args4j-2.0.25:" level="project" />
+    <orderEntry type="library" name="Gradle: :berkeleylm-1.1.2:" level="project" />
+    <orderEntry type="library" name="Gradle: :zemberek-core-0.9.0:" level="project" />
+    <orderEntry type="library" name="Gradle: :zemberek-hyphenation-0.9.0:" level="project" />
+    <orderEntry type="library" name="Gradle: :zemberek-lm-0.9.0:" level="project" />
+    <orderEntry type="library" name="Gradle: :zemberek-morphology-0.9.0:" level="project" />
+    <orderEntry type="library" name="Gradle: :zemberek-tokenization-0.9.0:" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.pdfbox:pdfbox:1.8.10" level="project" />
+    <orderEntry type="library" name="Gradle: org.bytedeco.javacpp-presets:tesseract:3.04-1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.bytedeco.javacpp-presets:tesseract:windows-x86_64:3.04-1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.bytedeco.javacpp-presets:leptonica:windows-x86_64:1.72-1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.bytedeco.javacpp-presets:leptonica:1.72-1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.codehaus.groovy:groovy-all:2.3.11" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.commons:commons-compress:1.9" level="project" />
+    <orderEntry type="library" name="Gradle: commons-io:commons-io:2.4" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.pdfbox:fontbox:1.8.10" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.pdfbox:jempbox:1.8.10" level="project" />
+    <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.bytedeco:javacpp:1.1" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="Ocr_main" />
+</module>

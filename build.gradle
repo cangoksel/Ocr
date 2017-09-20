@@ -1,0 +1,50 @@
+import org.apache.tools.ant.taskdefs.condition.Os
+sourceCompatibility = 1.8
+ext {
+
+    if (Os.isFamily(Os.FAMILY_UNIX)) {
+        os = 'linux'
+    }
+    if (Os.isFamily(Os.FAMILY_MAC)) {
+        os = 'macosx'
+    }
+    if (Os.isFamily(Os.FAMILY_WINDOWS)) {
+        os = 'windows'
+    }
+    arch = System.getProperty("os.arch");
+
+    if (arch == 'amd64') {
+        arch = 'x86_64'
+    }
+    opencvBinaryClassifer = os + '-' + arch;
+
+}
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+    flatDir { dirs "/lib" }
+}
+
+dependencies {
+    compile name: "antlr4-runtime-4.0.1z"
+    compile name: "args4j-2.0.25"
+    compile name: "berkeleylm-1.1.2"
+    compile name: "zemberek-core-0.9.0"
+    compile name: "zemberek-hyphenation-0.9.0"
+    compile name: "zemberek-lm-0.9.0"
+    compile name: "zemberek-morphology-0.9.0"
+    compile name: "zemberek-tokenization-0.9.0"
+    compile group: "org.apache.pdfbox", name: "pdfbox", version: "1.8.10"
+    compile group: "org.bytedeco.javacpp-presets", name: "tesseract", version: "3.04-1.1"
+    compile group: "org.bytedeco.javacpp-presets", name: "tesseract", version: "3.04-1.1", classifier: opencvBinaryClassifer
+    compile group: "org.bytedeco.javacpp-presets", name: "leptonica", version: "1.72-1.1", classifier: opencvBinaryClassifer
+    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+    compile group: "org.apache.commons", name: "commons-compress", version: "1.9"
+    compile group: "commons-io", name: "commons-io", version: "2.4"
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Ocr.iml" filepath="$PROJECT_DIR$/Ocr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Ocr_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Ocr_main.iml" group="Ocr" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Ocr_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Ocr_test.iml" group="Ocr" />
+    </modules>
+  </component>
+</project>
